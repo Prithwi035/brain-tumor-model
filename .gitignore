@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datasets (prevents uploading gigabytes of raw MRI scans)
+data/
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.zip
+*.tar.gz
+
+# Model Weights (>100MB exceeds GitHub upload limits)
+models/saved/*.keras
+models/saved/*.h5
+!models/saved/README.md
+
+# Prediction & Test Outputs
+results/predictions/*
+!results/predictions/.gitkeep
+results/plots/*
+*.log
+
+# Environments & Editor Caches
+.env
+.venv
+env/
+venv/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
