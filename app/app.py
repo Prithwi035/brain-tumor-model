@@ -1,5 +1,5 @@
 """
-NeuroVision DX - Minimal Brain MRI Diagnostic Console
+Brain MRI Diagnostic Console
 Optimized, clean interface for MRI tumor classification, Grad-CAM attention, and U-Net segmentation.
 
 Run with:
@@ -24,7 +24,7 @@ from pdf_report import generate_pdf_report
 # Page Setup
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="NeuroVision DX",
+    page_title="Brain Tumor Detection Console",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -279,8 +279,8 @@ def show_invalid_dialog(reason: str):
 # Main Application
 # ─────────────────────────────────────────────────────────────────────────────
 def main():
-    st.markdown('<div class="main-title">NeuroVision DX</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-title">Brain MRI Diagnostic Console · Dual-Engine Classification & Lesion Localization</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-title">Brain Tumor Detection Console</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">Dual-Engine Classification & Lesion Localization</div>', unsafe_allow_html=True)
 
     models = load_models()
     if "classifier" not in models or "unet" not in models:
@@ -452,7 +452,7 @@ def main():
         )
 
     with down_c2:
-        report_text = f"""NEUROVISION DX - DIAGNOSTIC REPORT
+        report_text = f"""BRAIN TUMOR DETECTION REPORT
 Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}
 Scan File: {scan_name}
 

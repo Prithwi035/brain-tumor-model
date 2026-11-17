@@ -1,10 +1,10 @@
-# NeuroVision DX — Brain MRI Diagnostic System
+# Brain Tumor Detection Console
 
 A deep learning system for **brain tumor classification**, **U-Net lesion segmentation**, and **Grad-CAM visual attribution**, with an interactive web console and automated clinical PDF report generator.
 
 ---
 
-## 🧠 Features
+## Features
 
 - **Multi-Class Classification**: EfficientNetB3 model (95.1% accuracy) identifying **Glioma**, **Meningioma**, **Pituitary Tumor**, and **Normal** scans.
 - **Lesion Segmentation**: 4-depth U-Net model trained with Dice + BCE loss for boundary delineation.
@@ -14,7 +14,7 @@ A deep learning system for **brain tumor classification**, **U-Net lesion segmen
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -35,7 +35,7 @@ Generates both `results/predictions/inference_result.png` and a clinical PDF rep
 
 ---
 
-## 📊 Models & Performance
+## Models & Performance
 
 | Task | Architecture | Target Layer / Loss | Metric |
 | :--- | :--- | :--- | :--- |
@@ -45,7 +45,7 @@ Generates both `results/predictions/inference_result.png` and a clinical PDF rep
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 brain_tumor_dev/
@@ -69,6 +69,6 @@ brain_tumor_dev/
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This software is built for **academic demonstration and research purposes only**. It is not a certified medical device and must not be used as a substitute for professional clinical diagnosis.

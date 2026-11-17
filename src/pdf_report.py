@@ -1,5 +1,5 @@
 """
-NeuroVision DX - Automated Clinical PDF Diagnostic Report Generator
+Clinical Brain MRI Diagnostic Report Generator
 Generates a structured, one-page A4 clinical radiology report with embedded triad imaging.
 """
 import io, datetime
@@ -173,8 +173,8 @@ def generate_pdf_report(
     study_id = scan_name.split('.')[0].upper()
     header_data = [
         [
-            Paragraph("NEUROVISION DIAGNOSTICS & RADIOLOGY LABS", title_style),
-            Paragraph(f"<b>REPORT ID:</b> NVDX-{study_id}<br/><b>ISSUED:</b> {now_str}", ParagraphStyle('RightMeta', fontName='Helvetica', fontSize=7.5, leading=10, alignment=2, textColor=colors.HexColor('#475569')))
+            Paragraph("CLINICAL BRAIN MRI DIAGNOSTIC REPORT", title_style),
+            Paragraph(f"<b>REPORT ID:</b> MRIDx-{study_id}<br/><b>ISSUED:</b> {now_str}", ParagraphStyle('RightMeta', fontName='Helvetica', fontSize=7.5, leading=10, alignment=2, textColor=colors.HexColor('#475569')))
         ],
         [
             Paragraph("AI-Assisted Cranial MRI Computer-Aided Detection (CAD) System", subtitle_style),
